@@ -17,7 +17,7 @@ public class twoRepeatedElements {
             xor^=i;
         
         int rightMostSetBit = xor & -xor;
-        System.out.println(rightMostSetBit);
+        
         for(int num:arr){
             if((num & rightMostSetBit)==0)
                 res[0]^=num;
@@ -50,3 +50,4 @@ public class twoRepeatedElements {
     }
     
 }
+
